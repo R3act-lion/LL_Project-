@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Form = styled.form`
+export const Form = styled.form`
     width: 100%;
     padding: 0 35px;
 `
 
-const FormLabel = styled.label`
+export const FormLabel = styled.label`
     display: block;
     margin-bottom: 5px;
     color: #767676;
     font-size: 12px;
 `
 
-const FormInput = styled.input`
+export const FormInput = styled.input`
     width: 100%;
     height: 28px;
     margin-bottom: 16px;
@@ -27,9 +27,9 @@ const FormInput = styled.input`
         border-bottom: 2px solid #4897EA;
     }
 `
-const FormLoginBtn = styled.button`
+export  const FormLoginBtn = styled.button`
     width: 100%;
-    height: 44px;
+    height: 44px;     
     margin-top: 14px;
     border: none;
     background-color: #4897EA;

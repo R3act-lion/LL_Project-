@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 import LoginForm from '../../components/LoginForm';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.section`
     width: 390px;
@@ -15,7 +16,7 @@ const ContainerHeader = styled.h2`
     color: #4897EA;
 `
 
-const ContainerAnchor = styled.a`
+const ContainerAnchor = styled.span`
     display: block;
     text-align: center;
     text-decoration: none;
@@ -26,11 +27,17 @@ const ContainerAnchor = styled.a`
 `
 
 export default function Login() {
-    return (
-        <Container>
-            <ContainerHeader>로그인</ContainerHeader>
-            <LoginForm />
-            <ContainerAnchor href='https://www.google.com'>이메일로 회원가입</ContainerAnchor>
-        </Container>
+
+    const navigate=useNavigate();
+    return ( 
+            <Container>
+                <ContainerHeader>로그인</ContainerHeader>
+                <LoginForm />
+                <ContainerAnchor onClick={()=>{
+                    navigate("/signup");
+                    }}>이메일로 회원가입
+                </ContainerAnchor>
+            </Container>
+            
     )
 }
