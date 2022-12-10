@@ -1,12 +1,13 @@
 import { createGlobalStyle } from "styled-components"
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Profile from "./pages/Profile/Profile";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
-body, h1, h2 {
+body, h1, h2, p {
   margin: 0;
   padding: 0;
 }
@@ -32,9 +33,16 @@ function App() {
         <>
         <GlobalStyle />
         <Signup />
-        </>
-      }/>
-    
+        </>}>
+      </Route>
+
+      <Route path="/profile" element={
+        <>
+        <GlobalStyle />
+        <Profile />
+        </>}>
+        </Route>
+
     </Routes>
     </BrowserRouter>
   );

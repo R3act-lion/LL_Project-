@@ -3,20 +3,20 @@ import styled from "styled-components";
 import LoginForm from '../../components/LoginForm';
 import { useNavigate } from 'react-router-dom';
 
-const Container = styled.section`
+export const Container = styled.section`
     width: 390px;
     margin: 0 auto;
     background-color: white;
 `
 
-const ContainerHeader = styled.h2`
+export const ContainerHeader = styled.h2`
     text-align: center;
     padding-top: 30px;
     padding-bottom: 40px;
     color: #4897EA;
 `
 
-const ContainerAnchor = styled.span`
+export const ContainerAnchor = styled.span`
     display: block;
     text-align: center;
     text-decoration: none;

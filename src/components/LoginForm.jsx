@@ -27,7 +27,7 @@ export const FormInput = styled.input`
         border-bottom: 2px solid #4897EA;
     }
 `
-export  const FormLoginBtn = styled.button`
+export const FormBtn = styled.button`
     width: 100%;
     height: 44px;     
     margin-top: 14px;
@@ -46,7 +46,7 @@ export default function LoginForm() {
             <FormInput id='emailInput' type='text' />
             <FormLabel htmlFor='passwordInput' >패스워드</FormLabel>
             <FormInput id='passwordInput' type='password' />
-            <FormLoginBtn id='loginBtn' type='button' >로그인</FormLoginBtn>
+            <FormBtn id='loginBtn' type='button' >로그인</FormBtn>
         </Form>
     )
 }
